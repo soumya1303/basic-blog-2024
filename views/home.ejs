@@ -1,0 +1,7 @@
+<%-include("partials/header")%>
+
+<%foo.forEach((e)=>{%>
+    <h1><a href="/blogs/<%=e.blogTitle%>"><%=e.blogTitle%></a></h1>
+    <p><%=e.blogText.substring(0, 100)%>...<a href="/blogs/<%=e.blogTitle%>">more</a></p>
+<%})%>
+<%-include("partials/footer")%>
